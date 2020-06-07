@@ -52,7 +52,7 @@ or
 
 **step 6**: compute one row of similarity matrix using L1 distance
 
-<p align="center">
+<p align="center" title="sim">
   <img src="img/simmat_1.png" width="60%">
 </p>
 
