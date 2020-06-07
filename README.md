@@ -18,6 +18,10 @@ To produce inference over new face imgs we need to compute one row of **similari
 
 ## Our Pipeline
 
+<p align="center">
+  <img src="img/graph_1.png" width="25%">
+</p>
+
 **inputs**: 
   * pre-trained PcaNet over 1000 imgs (LFW)
   * Manhattan distance (L1 distance)
@@ -62,6 +66,10 @@ by producing the harmonic solution:
 
 <p align="center">
   <img src="img/eq_2.png" width="20%">
+</p>
+
+<p align="center">
+  <img src="img/graph_2.png" width="25%">
 </p>
 
 **output**: display on current frame.
