@@ -24,11 +24,11 @@ inputs:
   * pre-trained Viola-Jones algorithm
   * 50 imgs from different people (label = false)
 
-step 1: take few snapshots (3-5) in real-time of a target face 
+step 1: take few snapshots (3-5) in real-time of a target face (label = true)
 
 or
 
-step 1 bis: use face imgs already taken from a target (label = true)
+step 1 bis: use face imgs already taken from a target face (label = true)
 
 step 2: take a new snapshot (frame) in real-time as unlabelled img
 
