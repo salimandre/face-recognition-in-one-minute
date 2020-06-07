@@ -44,7 +44,8 @@ To produce inference over new face imgs we need to compute one row of **similari
   <img src="img/preprocessing.png" width="8%">
 </p>
 
-**step 5**: extract features for each face using PcaNet
+**step 5**: extract features for each face using PcaNet. 
+From 1920 features we only kept first 500 of them.
 
 **step 6**: compute one row of similarity matrix using L1 distance
 
