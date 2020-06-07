@@ -53,7 +53,7 @@ or
 **step 6**: compute one row of similarity matrix using L1 distance
 
 <p align="center">
-  <img src="img/simmat_1.png" title="Similarity Matrix" width="60%">
+  <img src="img/simmat_1.png" title="Similarity Matrix" width="60%" alt="Similarity Matrix">
 </p>
 
 **step 7**: solve the following optimization problem:
