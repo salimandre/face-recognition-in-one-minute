@@ -63,7 +63,7 @@ We used roughly 50 imgs
 
 ## Limits
 
-* Viola does capture well change of pose therefore to detect a face we need it to be mostly frontal
+* Viola does not capture well change of pose therefore to detect a face we need it to be mostly frontal
 
 * we do not use a pre-trained segmentation tool to extract faces from background in bounding boxes.
 
