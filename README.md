@@ -19,7 +19,7 @@ To produce inference over new face imgs we need to compute one row of **similari
 ## Our Pipeline
 
 <p align="center">
-  <img src="img/graph_1.png" width="25%">
+  <img src="img/graph_1.png" width="60%">
 </p>
 
 **inputs**: 
@@ -69,7 +69,7 @@ by producing the harmonic solution:
 </p>
 
 <p align="center">
-  <img src="img/graph_2.png" width="25%">
+  <img src="img/graph_2.png" width="60%">
 </p>
 
 **output**: display on current frame.
