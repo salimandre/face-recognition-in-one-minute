@@ -32,7 +32,9 @@ or
 
 **step 2**: take a new snapshot (frame) in real-time as unlabelled img
 
-**step 4**: compute bounding boxes using Viola-Jones algorithms to detect faces in every imgs
+**step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces in every imgs
+
+**step 4**: preprocess faces: extract green channel, cropping, resizing
 
 **step 5**: extract features for each face using PcaNet
 
