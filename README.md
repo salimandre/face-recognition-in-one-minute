@@ -41,7 +41,7 @@ or
 **step 4**: preprocess faces: extract green channel, cropping, resizing
 
 <p align="center">
-  <img src="img/preprocessing.png" width="25%">
+  <img src="img/preprocessing.png" width="10%">
 </p>
 
 **step 5**: extract features for each face using PcaNet
