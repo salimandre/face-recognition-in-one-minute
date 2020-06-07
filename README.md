@@ -47,7 +47,7 @@ To produce inference over new face imgs we need to compute one row of **similari
 **step 5**: extract features for each face using PcaNet. 
 From 1920 features we only kept first 500 of them.
 
-**step 6**: compute one row of similarity matrix using L1 distance
+**step 6**: compute one row (per frame) of similarity matrix using L1 distance
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
 
