@@ -51,13 +51,13 @@ or
 **step 7**: solve the following optimization problem:
 
 <p align="center">
-  <img src="img/eq_1.png" width="25%">
+  <img src="img/eq_1.png" width="20%">
 </p>
 
 by producing the harmonic solution:
 
 <p align="center">
-  <img src="img/eq_1.png" width="25%">
+  <img src="img/eq_2.png" width="20%">
 </p>
 
 **output**: display on current frame.
