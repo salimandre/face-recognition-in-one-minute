@@ -35,13 +35,13 @@ or
 **step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces in every imgs
 
 <p align="center">
-  <img src="img/filters_l1.png" width="25%">
+  <img src="img/viola_algo.png" width="25%">
 </p>
 
 **step 4**: preprocess faces: extract green channel, cropping, resizing
 
 <p align="center">
-  <img src="img/filters_l1.png" width="25%">
+  <img src="img/preprocessing.png" width="25%">
 </p>
 
 **step 5**: extract features for each face using PcaNet
