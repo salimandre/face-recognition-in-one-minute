@@ -23,12 +23,12 @@ To produce inference over new face imgs we need to compute one row of **similari
 </p>
 
 **inputs**: 
-  * pre-trained PcaNet over 1000 imgs (LFW)
-  * Manhattan distance (L1 distance)
   * pre-trained Viola-Jones algorithm
-  * 50 imgs from different people (label = false)
+  * 1000 imgs from different people
 
-**step 1**: take few snapshots (3-5) in real-time of a target face (label = true)
+**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to a target
+
+**step 1**: take few snapshots (3-5) in real-time of a target face
 
 **step 2**: take a new snapshot (frame) in real-time as unlabelled img
 
