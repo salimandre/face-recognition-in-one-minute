@@ -27,7 +27,7 @@ To produce inference over new face imgs we need to compute one row of **similari
 These imgs will be added to Graph Of Faces and labelled as false.
 
 <p align="center">
-  <img src="img/my_stars.png" width="58%">
+  <img src="img/my_stars.png" width="34%">
 </p>
 
 **step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
