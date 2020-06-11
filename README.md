@@ -102,6 +102,14 @@ We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled a
 
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
+<p align="center">
+  <img src="img/results_quad.png" width="50%">
+</p>
+
+<p align="center">
+  <img src="img/result_one_minute.mp4" width="50%">
+</p>
+
 ## Limits
 
 * Viola does not capture well changes of pose therefore to detect a face we need it to be mostly frontal
