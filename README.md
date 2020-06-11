@@ -64,7 +64,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 <p align="center">
   <img src="img/simmat_1.png" width="60%">
 </p>
-        - **solve** the following optimization problem:
+       - **solve** the following optimization problem:
 
 <p align="center">
   <img src="img/eq_1.png" width="20%">
