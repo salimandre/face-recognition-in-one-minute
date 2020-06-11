@@ -88,3 +88,4 @@ For each frame perform "all in one" inference for both current frame and for fac
 
 * we do not use a pre-trained segmentation tool to extract faces from background in bounding boxes.
 
+* We used resised imgs (50,37) to train PcaNet (hence inference too) in order to limit the number of features to 1920 but with an other model (MobileNet?) it may be possible to use bigger imgs and have same quality of features or even better. 
