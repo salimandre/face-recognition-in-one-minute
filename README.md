@@ -103,17 +103,15 @@ We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled a
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
 <p align="center">
-  <img src="img/results_quad.png" width="50%">
-</p>
-
-<p align="center">
-  <img src="img/result_one_minute.mp4" width="50%">
+  <img src="img/results_quad.png" width="25%">
 </p>
 
 ## Limits
 
-* Viola does not capture well changes of pose therefore to detect a face we need it to be mostly frontal
+* Viola-Jones detection method does not capture well changes of pose therefore to detect a face we need it to be mostly frontal
 
 * we do not use a pre-trained segmentation tool to extract faces from background in bounding boxes.
 
-* We used resised imgs (50,37) to feed into PcaNet in order to limit the number of features to 1920 (with our own current version of PcaNet we lack of flexibility) but with an other model (MobileNet?) it may be possible to use bigger imgs and have same quality of features or even better. 
+* We used resised imgs (50,37) to feed into PcaNet in order to limit the number of features to 1920 (with our own current version of PcaNet we lack of flexibility) but with an other model (MobileNet?) it may be possible to use bigger imgs and have same quality of features or even better.
+
+* Sensible to illumination
