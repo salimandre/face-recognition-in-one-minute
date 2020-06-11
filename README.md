@@ -50,20 +50,21 @@ Perform preprocessing step: crop, convert to grayscale, resize.
     - **Train PcaNet** on current true/false face images.
     - **Inference** of features on faces
     - **Evaluate** PcaNet model
-    
-        - repeat 100 times:
+     
+     - repeat 100 times:
       
-          - **sample** randomly an image from dataset:
+      - **sample** randomly an image from dataset:
       
-           - **compute** one row of **similarity matrix** using L1 distance
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
+       - **compute** one row of **similarity matrix** using L1 distance
 
 <p align="center">
-  <img src="img/simmat_1.png" title="Similarity Matrix" width="60%" alt="Similarity Matrix">
-</p>
-    
-         - **solve** the following optimization problem:
+<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
+</p >
+
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
+</p >
+       - **solve** the following optimization problem:
 
 <p align="center">
   <img src="img/eq_1.png" width="20%">
@@ -74,10 +75,8 @@ by producing the harmonic solution:
 <p align="center">
   <img src="img/eq_2.png" width="20%">
 </p>
-
-      - compute the % of **false positive** 
-
-    - Take **best model** with lowest false positive rate
+       - compute the % of **false positive** 
+       - Take **best model** with lowest false positive rate
 
 **step 4**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model.
 
