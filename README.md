@@ -24,19 +24,31 @@ To produce inference over new face imgs we need to compute one row of **similari
 
 **inputs**: 
   * pre-trained Viola-Jones algorithm
-  * 1000 imgs from different people
+  * a dataset of 1000 imgs from different people
 
-**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to a target
+**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to you.
 
-**step 1**: take few snapshots (3-5) in real-time of a target face
+These imgs will be added to graph of faces and labelled as false.
 
-**step 2**: take a new snapshot (frame) in real-time as unlabelled img
+**step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
 
-**step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces in every imgs
+These imgs will be added to graph of faces and labelled as true.
+
+**step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
+
+Perform preprocessing step: crop, convert to grayscale, resize.
 
 <p align="center">
-  <img src="img/viola_algo.png" width="25%">
+  <img src="img/preprocessing.png" width="8%">
 </p>
+
+**step 4**: search of best PcaNet model.
+
+-> Train PcaNet a certain amount of times on current true/false face images.
+
+-> Evaluate on dataset with images of people by computing the % of false positive 
+
+-> Take best model with lowest false positive rate
 
 **step 4**: preprocess faces: extract green channel, cropping, resizing
 
