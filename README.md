@@ -18,10 +18,6 @@ To produce inference over new face imgs we need to compute one row of **similari
 
 ## Our Pipeline
 
-<p align="center">
-  <img src="img/graph_11.png" width="60%">
-</p>
-
 **inputs**: 
   * pre-trained Viola-Jones algorithm
   * a dataset of 1000 imgs from different people
@@ -31,7 +27,7 @@ To produce inference over new face imgs we need to compute one row of **similari
 These imgs will be added to Graph Of Faces and labelled as false.
 
 <p align="center">
-  <img src="img/my_stars.png" width="8%">
+  <img src="img/my_stars.png" width="58%">
 </p>
 
 **step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
