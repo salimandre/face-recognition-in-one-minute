@@ -40,7 +40,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 
 <p align="center">
   <img src="img/my_face.png" width="28%">
- <img src="img/my_face_pp.png" width="28%">
+ <img src="img/my_face_pp.png" width="6%">
 </p>
 
 **step 4**: search of best PcaNet model for Graph Of Faces.
