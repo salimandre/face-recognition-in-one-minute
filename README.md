@@ -43,7 +43,9 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 </p>
 
 **step 4**: search of best PcaNet model.
+
   ll
+  
 -> Train PcaNet a certain amount of times on current true/false face images.
 
 -> Evaluate on dataset with images of people by computing the % of false positive 
