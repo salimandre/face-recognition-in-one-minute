@@ -110,6 +110,8 @@ We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled a
   <img src="img/results_quad.png" width="25%">
 </p>
 
+Note: If we wanted to start without star images (images for false labels) it is possible search them among the LFW-Funneled db. We computed 30 runs instead on 10 above in order to find best model and best 5 false labelled images to start from. We could get similar results although it takes 2 min more time.
+
 ## Limits
 
 * Viola-Jones detection method does not capture well changes of pose therefore to detect a face we need it to be mostly frontal
