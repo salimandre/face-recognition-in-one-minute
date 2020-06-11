@@ -7,7 +7,7 @@ We were inspired for this work by the following reference:
 
 ## Interest of the method
 
-Our philosophy during this work was to be able to work in **real-time fashion** and to be **adaptative**. Therefore to avoid any heavy computation or training time. In some sense we wanted to produce a low-cost method of face recognition. In addition to the fact that only **light computation** is required it is **little demanding on data**. We only requires a dataset of raw 1000 imgs with people faces on it without any label required. We used LFW dataset available online for free. An other strong interest is the possibility to improve model by simply adding unlabelled imgs (hence **semi-supervised**) to graph. That's what we used at boosting step with success. Also authors Branislav Kveton et al. claimed to obtain results using harmonic solution which are **better than using KNN** method.
+Our philosophy during this work was to be able to work in **real-time fashion** and to be **adaptative**. Therefore to avoid any heavy computation or training time. In some sense we wanted to produce a low-cost method of face recognition. In addition to the fact that only **light computation** is required it is **little demanding on data**. We only requires a dataset of raw 1000 imgs with people faces on it without any label required. We used LFW-funneled dataset available online for free. An other strong interest is the possibility to improve model by simply adding unlabelled imgs (hence **semi-supervised**) to graph. That's what we used at boosting step with success. Also authors Branislav Kveton et al. claimed to obtain results using harmonic solution which are **better than using KNN** method.
 
 Thus we used a pre-trained **Viola-Jones** algorithm *Robust Real-time Object Detection*, Paul Viola , Michael Jones, 2001 which has been thought to be fast and small device friendly. 
 
@@ -96,7 +96,11 @@ For each frame perform "all in one" inference for both current frame and for fac
 
 ## Results
 
+We used the following **settings**: 10 imgs of stars showed above, 6 snapshots, 8 runs to find best PcaNet model evaluated on 100 random imgs from **LFW-funneled dataset**, found 40 support nodes among 250 random imgs. 
 
+We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled and we obtained **2.2%**. 
+
+**Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
 ## Limits
 
