@@ -39,7 +39,8 @@ These imgs will be added to Graph Of Faces and labelled as true.
 Perform preprocessing step: crop, convert to grayscale, resize.
 
 <p align="center">
-  <img src="img/preprocessing.png" width="8%">
+  <img src="img/my_face.png" width="28%">
+ <img src="img/my_face_pp.png" width="28%">
 </p>
 
 **step 4**: search of best PcaNet model for Graph Of Faces.
