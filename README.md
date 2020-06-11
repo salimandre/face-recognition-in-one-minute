@@ -39,7 +39,7 @@ These imgs will be added to Graph Of Faces and labelled as true.
 </p>
 
 <p align="center">
-  <img src="img/graph_0.png" width="60%">
+  <img src="img/graph_0_bis.png" width="50%">
 </p>
 
 **step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
@@ -83,7 +83,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 **step 5**: Perform Boosting step by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
 
 <p align="center">
-  <img src="img/graph_1.png" width="60%">
+  <img src="img/graph_1.png" width="50%">
 </p>
 
 **step 5**: Perform inference using boosting on frame.
@@ -91,7 +91,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 For each frame perform "all in one" inference for both current frame and for faces chosen at previous steps.
 
 <p align="center">
-  <img src="img/graph_2.png" width="60%">
+  <img src="img/graph_2_bis.png" width="50%">
 </p>
 
 ## Results
