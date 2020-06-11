@@ -28,11 +28,11 @@ To produce inference over new face imgs we need to compute one row of **similari
 
 **step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to you.
 
-These imgs will be added to graph of faces and labelled as false.
+These imgs will be added to Graph Of Faces and labelled as false.
 
 **step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
 
-These imgs will be added to graph of faces and labelled as true.
+These imgs will be added to Graph Of Faces and labelled as true.
 
 **step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
 
@@ -42,24 +42,47 @@ Perform preprocessing step: crop, convert to grayscale, resize.
   <img src="img/preprocessing.png" width="8%">
 </p>
 
-**step 4**: search of best PcaNet model.
-
-  ll
+**step 4**: search of PcaNet model for Graph Of Faces.
   
--> Train PcaNet a certain amount of times on current true/false face images.
+  - repeat a certain amount of times (5-10):
+  
+    - **Train PcaNet** on current true/false face images.
+    - **Inference** of features on faces
+    - **Evaluate** PcaNet model
+    
+      - repeat 100 times:
+      
+        - **sample** randomly an image from dataset:
+      
+        - **compute** one row of **similarity matrix** using L1 distance
 
--> Evaluate on dataset with images of people by computing the % of false positive 
-
--> Take best model with lowest false positive rate
-
-**step 4**: preprocess faces: extract green channel, cropping, resizing
+<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
 
 <p align="center">
-  <img src="img/preprocessing.png" width="8%">
+  <img src="img/simmat_1.png" title="Similarity Matrix" width="60%" alt="Similarity Matrix">
+</p>
+    
+         - **solve** the following optimization problem:
+
+<p align="center">
+  <img src="img/eq_1.png" width="20%">
 </p>
 
-**step 5**: extract features for each face using PcaNet. 
-From 1920 features we only kept first 500 of them.
+by producing the harmonic solution:
+
+<p align="center">
+  <img src="img/eq_2.png" width="20%">
+</p>
+
+<p align="center">
+  <img src="img/graph_22.png" width="60%">
+</p>
+
+      - compute the % of **false positive** 
+
+  - Take **best model** with lowest false positive rate
+
+**step **: preprocess faces: extract green channel, cropping, resizing
 
 **step 6**: compute one row (per frame) of similarity matrix using L1 distance
 
