@@ -68,7 +68,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
         - compute the % of **false positive** 
    - Take **best model** with lowest false positive rate
 
-**step 4**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model.
+**step 5**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
 
 <p align="center">
   <img src="img/graph_22.png" width="60%">
@@ -76,19 +76,10 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 
 **step 5**: Inference using boosting on frame.
 
-For each frame perform inference "all in one" for both current frame plus for faces chosen at previous steps
+For each frame perform "all in one" inference for both current frame and for faces chosen at previous steps.
 
 ## Results
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
-
-Before going for real time inference we experimented on stored imgs.  
-
-We used roughly 50 imgs 
-
-<p align="center">
-  <img src="img/filters_l1.png" width="25%">
-</p>
 
 
 ## Limits
