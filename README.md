@@ -76,35 +76,17 @@ by producing the harmonic solution:
 
       - compute the % of **false positive** 
 
-  - Take **best model** with lowest false positive rate
+    - Take **best model** with lowest false positive rate
 
-**step **: preprocess faces: extract green channel, cropping, resizing
-
-**step 6**: compute one row (per frame) of similarity matrix using L1 distance
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a>
-
-<p align="center">
-  <img src="img/simmat_1.png" title="Similarity Matrix" width="60%" alt="Similarity Matrix">
-</p>
-
-**step 7**: solve the following optimization problem:
-
-<p align="center">
-  <img src="img/eq_1.png" width="20%">
-</p>
-
-by producing the harmonic solution:
-
-<p align="center">
-  <img src="img/eq_2.png" width="20%">
-</p>
+**step 4**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model.
 
 <p align="center">
   <img src="img/graph_22.png" width="60%">
 </p>
 
-**output**: display on current frame.
+**step 5**: Inference using boosting on frame.
+
+For each frame perform inference "all in one" for both current frame plus for faces chosen at previous steps
 
 ## Results
 
