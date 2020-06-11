@@ -68,7 +68,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
         - compute the % of **false positive** 
    - Take **best model** with lowest false positive rate
 
-**step 5**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
+**step 5**: Perform Boosting step by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
 
 <p align="center">
   <img src="img/graph_22.png" width="60%">
