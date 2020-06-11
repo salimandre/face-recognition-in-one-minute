@@ -56,22 +56,21 @@ Perform preprocessing step: crop, convert to grayscale, resize.
         - **sample** randomly an image from dataset:
       
         - **compute** one row of **similarity matrix** using L1 distance
-        <p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a></p >
+        - <p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=s(x,y)=(5000/d_{Manhattan}(x,y)))^4" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(x,y)=(5000/d_{Manhattan}(x,y)))^4" title="s(x,y)=(5000/d_{Manhattan}(x,y)))^4" /></a></p >
 
-        <p align="center"><img src="img/simmat_1.png" width="60%"></p>
+        - <p align="center"><img src="img/simmat_1.png" width="60%"></p>
         - **solve** the following optimization problem:
-
-<p align="center">
+        - <p align="center">
   <img src="img/eq_1.png" width="20%">
 </p>
 
-by producing the harmonic solution:
+        - by producing the harmonic solution:
 
-<p align="center">
+        - <p align="center">
   <img src="img/eq_2.png" width="20%">
 </p>
         - compute the % of **false positive** 
-        - Take **best model** with lowest false positive rate
+   - Take **best model** with lowest false positive rate
 
 **step 4**: Boosting by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model.
 
