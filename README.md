@@ -86,7 +86,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
   <img src="img/graph_1.png" width="50%">
 </p>
 
-**step 5**: Perform inference using boosting on frame.
+**step 6**: Perform inference using boosting on frame.
 
 For each frame perform "all in one" inference for both current frame and for faces chosen at previous steps.
 
