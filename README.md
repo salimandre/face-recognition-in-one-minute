@@ -110,7 +110,7 @@ We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled a
   <img src="img/results_quad.png" width="25%">
 </p>
 
-**Note**: If we wanted to start without star images (images for false labels) it is possible search them among the LFW-Funneled db. We computed 30 runs instead on 10 above in order to find best model and best 5 false labelled images to start from. We could get similar results although it takes 2 min more time.
+**Note**: If we wanted to start without star images (images for false labels) it is possible search them among the LFW-Funneled db. We computed 10 runs instead on 8 above in order to find best model and best 5 false labelled images. We could get similar results.
 
 ## Limits
 
