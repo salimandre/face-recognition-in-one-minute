@@ -103,6 +103,10 @@ We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled a
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
 <p align="center">
+  <img src="img/result_one_minute.gif" width="24%">
+</p>
+
+<p align="center">
   <img src="img/results_quad.png" width="25%">
 </p>
 
