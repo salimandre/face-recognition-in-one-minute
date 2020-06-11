@@ -60,15 +60,11 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 
         - <p align="center"><img src="img/simmat_1.png" width="60%"></p>
         - **solve** the following optimization problem:
-        - <p align="center">
-  <img src="img/eq_1.png" width="20%">
-</p>
+        - <p align="center"><img src="img/eq_1.png" width="20%"></p>
 
         - by producing the harmonic solution:
 
-        - <p align="center">
-  <img src="img/eq_2.png" width="20%">
-</p>
+        - <p align="center"><img src="img/eq_2.png" width="20%"></p>
         - compute the % of **false positive** 
    - Take **best model** with lowest false positive rate
 
