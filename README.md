@@ -13,7 +13,7 @@ Thus we used a pre-trained **Viola-Jones** algorithm *Robust Real-time Object De
 
 We also used **PcaNet** model which has a low amount of parameters (roughly 200) and is very fast to learn and yet produces good results (cf https://github.com/salimandre/PcaNet).
 
-To produce inference over new face imgs we need to compute one row of **similarity matrix** per unlabelled img then compute an **harmonic extension** of a function over the graph of faces. This takes basically O(|V|) for one frame.
+To produce inference over new face imgs we need to compute one row of **similarity matrix** per unlabelled img then compute an **harmonic extension** of a function over the graph of faces. This takes basically O(|V|^3) for one frame.
 
 
 ## Our Pipeline
