@@ -1,4 +1,4 @@
-# Face Recognition In A Minute
+# Face Recognition In One Minute
 
 We were inspired for this work by the following reference:
 
