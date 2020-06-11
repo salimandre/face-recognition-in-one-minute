@@ -27,7 +27,7 @@ To produce inference over new face imgs we need to compute one row of **similari
 These imgs will be added to Graph Of Faces and labelled as false.
 
 <p align="center">
-  <img src="img/my_stars.png" width="34%">
+  <img src="img/my_stars.png" width="24%">
 </p>
 
 **step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
@@ -62,7 +62,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
 </p >
 
 <p align="center">
-  <img src="img/simmat_1.png" width="20%">
+  <img src="img/simmat_1.png" width="60%">
 </p>
         - **solve** the following optimization problem:
 
