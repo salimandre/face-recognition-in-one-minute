@@ -34,6 +34,10 @@ These imgs will be added to Graph Of Faces and labelled as false.
 
 These imgs will be added to Graph Of Faces and labelled as true.
 
+<p align="center">
+  <img src="img/real_time_label.gif" width="24%">
+</p>
+
 **step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
 
 Perform preprocessing step: crop, convert to grayscale, resize.
