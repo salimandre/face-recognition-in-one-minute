@@ -22,7 +22,7 @@ To produce inference over new face imgs we need to compute one row of **similari
   * pre-trained Viola-Jones algorithm
   * a dataset of 1000 imgs from different people
 
-**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to you. We downloaded ours from google images.
+**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to you. We downloaded ours from google images. Note: this step could be spared, as explained in Results.
 
 These imgs will be added to Graph Of Faces and labelled as false.
 
