@@ -6,7 +6,7 @@ We were inspired for this work by the following reference:
 
 ## Installation
 
-Don't clone repo since there are lot of imgs... Just download py files from py folder + requirements.txt
+Don't clone repo since there are lot of imgs... Just download required files from the following list:
 
 **Download**:
 
