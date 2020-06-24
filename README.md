@@ -10,7 +10,7 @@ Don't clone repo since there are lot of imgs... Just download **5 required files
 
 **Download**:
 
-- LFW-funneled (13000 imgs) http://vis-www.cs.umass.edu/lfw/ (but you can use any dataset with imgs of people as long as it is diverse enough)
+- LFW-funneled (13000 imgs) http://vis-www.cs.umass.edu/lfw/ (but you can use any dataset with imgs of people as long as it is diverse enough >1000)
 - py folder from this repository
 - cascade folder from this repository
 - requirements.txt
