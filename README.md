@@ -65,9 +65,10 @@ Perform preprocessing step: crop, convert to grayscale, resize.
     
     Perform preprocessing step: *crop*, convert to *grayscale*, *resize*.
     
-    Faces from LFW-Funneled will be labelled as *false* while faces from snapshots as *true*
-
     - <p align="center"><img src="img/my_face.png" width="24%"><img src="img/my_face_pp.png" width="6%"><img src="img/my_stars_jesse.png" width="14%"><img src="img/jesse_pp.png" width="6%"><img src="img/my_stars_leo.png" width="14%"><img src="img/leo_pp.png" width="6%"></p>
+    
+    - **Add nodes to graph** Faces from LFW-Funneled will be labelled as *false* while faces from snapshots as *true*
+    - <p align="center"><img src="img/graph_0_bis.png" width="50%"></p>
     - **Train PcaNet** on current true/false face images.
     - **Inference** of features on faces
     - **Evaluate** Graph Of Faces + PcaNet model
