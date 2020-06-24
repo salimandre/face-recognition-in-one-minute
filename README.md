@@ -8,6 +8,13 @@ We were inspired for this work by the following reference:
 
 Don't clone repo since there are lot of imgs... Just download py files from py folder + requirements.txt
 
+**Download**:
+
+- LFW-funneled (13000 imgs) http://vis-www.cs.umass.edu/lfw/
+- py folder from this repository
+- cascade folder from this repository
+- requirements.txt
+
 On Mac OS:
 
 ```sh
