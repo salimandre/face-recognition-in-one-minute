@@ -7,7 +7,7 @@ We were inspired for this work by the following reference:
 
 ## Interest of the method
 
-Our philosophy during this work was to be able to work in **real-time fashion**. Therefore to avoid any heavy computation or training time. In some sense we wanted to produce a low-cost method of face recognition. In addition to the fact that only **light computation** is performed, it does not require any prior **domain knowledge** and it is **little demanding on data**. It only requires a dataset of raw 1000 imgs with people on them without any label required. We used **LFW-funneled** dataset available online for free. An other strong interest is the possibility to improve model by simply adding unlabelled imgs (hence **semi-supervised**) to graph. That's what we used at boosting step with success. Also authors Branislav Kveton et al. claimed to obtain results using harmonic solution which are **better than using KNN** method.
+Our philosophy during this work was to be able to work in **real-time fashion**. Therefore to avoid any heavy computation or training time. In some sense we wanted to produce a low-cost method of face recognition. In addition to the fact that only **light computation** is performed, it does not require any prior **domain knowledge** and it is **little demanding on data**. It only requires a dataset of raw 1000 imgs with people on them without any label required. We used **LFW-funneled** dataset available online for free which provides 13000 images. An other strong interest is the possibility to improve model by simply adding unlabelled imgs (hence **semi-supervised**) to graph. That's what we used at boosting step with success. Also authors Branislav Kveton et al. claimed to obtain results using harmonic solution which are **better than using KNN** method.
 
 Thus we used a pre-trained **Viola-Jones** algorithm *Robust Real-time Object Detection*, Paul Viola , Michael Jones, 2001 which has been thought to be fast and small device friendly. 
 
@@ -90,7 +90,7 @@ step 3: we added 40 support nodes among 500 random imgs.
 
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
-**Evaluation** the false positive rate on 1000 random imgs from LFW-funneled and we obtained **99.9%**. In average 
+**Evaluation** We tried many runs and we evaluated the false positive rate on 1000 random imgs from LFW-funneled and we obtained **99.9%**. If diverse poses are taken during snapshots then recognition is robust to face movements as long as Viola-Jones detect a face. 
 
 <p align="center">
   <img src="img/result_one_minute.gif" width="24%">
@@ -99,8 +99,6 @@ step 3: we added 40 support nodes among 500 random imgs.
 <p align="center">
   <img src="img/results_quad.png" width="25%">
 </p>
-
-**Note**: If we wanted to start without star images (images for false labels) it is possible search them among the LFW-Funneled db. We computed 10 runs instead on 8 above in order to find best model and best 5 false labelled images. We could get similar results.
 
 ## Limits
 
