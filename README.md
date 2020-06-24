@@ -82,11 +82,15 @@ For each frame perform "all in one" inference for both current frame and for fac
 
 ## Results
 
-We used the following **settings**: 10 imgs of stars showed above, 6 snapshots, 8 runs to find best PcaNet model evaluated on 100 random imgs from **LFW-funneled dataset**, found 40 support nodes among 250 random imgs. 
+We used the following **settings**: 
 
-We **evaluated** the false positive rate on 1000 random imgs from LFW-funneled and we obtained **2.2%**. 
+step 1: we took 7 snapshots
+step 2: we sampled graph of faces/PcaNet 10 times to find 5 imgs of stars + best PcaNet. Model was evaluated on 100 random imgs from **LFW-funneled dataset**.
+step 3: we added 40 support nodes among 500 random imgs. 
 
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
+
+**Evaluation** the false positive rate on 1000 random imgs from LFW-funneled and we obtained **99.9%**. In average 
 
 <p align="center">
   <img src="img/result_one_minute.gif" width="24%">
