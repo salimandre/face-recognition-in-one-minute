@@ -108,6 +108,6 @@ step 3: we added 40 support nodes among 500 random imgs.
 
 * we do not use a pre-trained segmentation tool to extract faces from background in bounding boxes.
 
-* We used resised imgs (50,37) to feed into PcaNet in order to limit the number of features to 1920 (with our own current version of PcaNet we lack of flexibility) but with an other model (MobileNet?) it may be possible to use bigger imgs and have same quality of features or even better.
+* We resised imgs to (50,37) for PcaNet in order to limit the number of features to 1920 (with our own current version of PcaNet we lack of flexibility) but with an other model (MobileNet?) it may be possible to use bigger imgs and have same quality of features or even better.
 
 * Sensible to illumination
