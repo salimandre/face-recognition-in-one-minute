@@ -6,6 +6,21 @@ We were inspired for this work by the following reference:
 
 ## Installation
 
+Don't clone repo since there are lot of imgs... Just download py files from py folder + requirements.txt
+
+On Mac OS:
+
+```sh
+sudo apt install virtualenv
+mkdir face_reco
+cd face_reco
+virtualenv -p python3 face_reco_env
+source face_reco_env/bin/activate
+pip3 install -r requirements.txt
+python3 main.py
+```
+
+
 ## Interest of the method
 
 Our philosophy during this work was to be able to work in **real-time fashion**. Therefore to avoid any heavy computation or training time. In some sense we wanted to produce a low-cost method of face recognition. In addition to the fact that only **light computation** is performed, it does not require any prior **domain knowledge** and it is **little demanding on data**. It only requires a dataset of raw 1000 imgs with people on them without any label required. We used **LFW-funneled** dataset available online for free which provides 13000 images. An other strong interest is the possibility to improve model by simply adding unlabelled imgs (hence **semi-supervised**) to graph. That's what we used at boosting step with success. Also authors Branislav Kveton et al. claimed to obtain results using harmonic solution which are **better than using KNN** method.
