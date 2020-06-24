@@ -116,7 +116,7 @@ step 3: we added 40 support nodes among 500 random imgs.
 
 **Running time**: Snapshots took 14s (1 every 2s) + 1:09 of computations
 
-**Evaluation** We tried many runs and we evaluated the false positive rate on 1000 random imgs from LFW-funneled and we obtained **0.01%**. If diverse poses are taken during snapshots then recognition is robust to face movements as long as Viola-Jones detect a face. Although we lacked of evaluation in real condition with many different real people taking diverse poses.
+**Evaluation** We tried many runs and we evaluated the false positive rate on 1000 random imgs from LFW-funneled and we obtained **0.01%**. If diverse poses are taken during snapshots then recognition is robust to face movements as long as Viola-Jones detect a face. Although we lacked of evaluation in real condition with many different people taking diverse poses.
 
 <p align="center">
   <img src="img/result_one_minute.gif" width="24%">
