@@ -98,7 +98,7 @@ These imgs will be added to Graph Of Faces and labelled as true.
 
 **step 4**: Perform inference using boosting on frame.
 
-For each frame perform "all in one" inference for both current frame and for faces chosen at previous steps.
+For each frame perform "all in one" inference for both current frame and for faces chosen at previous step.
 
 <p align="center">
   <img src="img/graph_2_bis.png" width="50%">
