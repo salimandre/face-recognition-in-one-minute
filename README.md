@@ -30,7 +30,7 @@ These imgs will be added to Graph Of Faces and labelled as false.
   <img src="img/my_stars.png" width="24%">
 </p>
 
-**step 2**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
+**step 1**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
 
 These imgs will be added to Graph Of Faces and labelled as true.
 
@@ -42,7 +42,7 @@ These imgs will be added to Graph Of Faces and labelled as true.
   <img src="img/graph_0_bis.png" width="50%">
 </p>
 
-**step 3**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
+**step 2**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
 
 Perform preprocessing step: crop, convert to grayscale, resize.
 
@@ -55,13 +55,17 @@ Perform preprocessing step: crop, convert to grayscale, resize.
  <img src="img/leo_pp.png" width="6%">
 </p>
 
-**step 4**: search of best PcaNet model for Graph Of Faces.
+**step 3**: search of best PcaNet model for Graph Of Faces.
   
   - repeat a certain amount of times (5-10):
   
+    - **Sample Images** (3-10) from LFW-funneled dataset. 
+    - <p align="center"><img src="img/my_stars.png" width="24%"></p>
+    - **Extract faces** compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
+    These imgs will be added to Graph Of Faces and labelled as false.
     - **Train PcaNet** on current true/false face images.
     - **Inference** of features on faces
-    - **Evaluate** PcaNet model
+    - **Evaluate** Graph Of Faces + PcaNet model
      
       - repeat 100 times:
       
