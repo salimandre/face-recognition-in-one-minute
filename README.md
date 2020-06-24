@@ -66,7 +66,7 @@ These imgs will be added to Graph Of Faces and labelled as true.
         - compute the % of **false positive** 
    - Take **best model** with lowest false positive rate
 
-**step 3**: Perform Boosting step by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
+**step 3**: Perform Boosting step by randomly choosing faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
 
 <p align="center">
   <img src="img/graph_1.png" width="50%">
