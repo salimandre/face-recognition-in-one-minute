@@ -15,7 +15,7 @@ Don't clone repo since there are lot of imgs... Just download **5 required files
 - cascade folder from this repository
 - requirements.txt
 
-On Mac OS:
+On Mac OS / UNIX:
 
 ```sh
 sudo apt install virtualenv # if not already installed
