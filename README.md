@@ -24,6 +24,7 @@ cd face_reco
 virtualenv -p python3 face_reco_env
 source face_reco_env/bin/activate
 pip3 install -r requirements.txt
+# change variable PWD to current path of folder at the top of main.py and realtime_graph_of_faces.py
 python3 main.py
 ```
 
