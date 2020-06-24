@@ -11,7 +11,7 @@ Don't clone repo since there are lot of imgs... Just download py files from py f
 On Mac OS:
 
 ```sh
-sudo apt install virtualenv
+sudo apt install virtualenv # if not already installed
 mkdir face_reco
 cd face_reco
 virtualenv -p python3 face_reco_env
