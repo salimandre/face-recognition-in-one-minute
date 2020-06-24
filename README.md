@@ -61,8 +61,11 @@ Perform preprocessing step: crop, convert to grayscale, resize.
   
     - **Sample Images** (3-10) from LFW-funneled dataset. 
     - <p align="center"><img src="img/my_stars.png" width="24%"></p>
-    - **Extract faces** compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
-    These imgs will be added to Graph Of Faces and labelled as false.
+    - **Extract faces** compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.    
+    Perform preprocessing step: crop, convert to grayscale, resize.
+    Imgs from LFW-Funneled will be added to Graph Of Faces and labelled as *false* while snapshots will be labelled as *true*
+
+    - <p align="center"><img src="img/my_face.png" width="24%"><img src="img/my_face_pp.png" width="6%"><img src="img/my_stars_jesse.png" width="14%"><img src="img/jesse_pp.png" width="6%"><img src="img/my_stars_leo.png" width="14%"><img src="img/leo_pp.png" width="6%"></p>
     - **Train PcaNet** on current true/false face images.
     - **Inference** of features on faces
     - **Evaluate** Graph Of Faces + PcaNet model
