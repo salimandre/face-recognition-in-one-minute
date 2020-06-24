@@ -55,7 +55,7 @@ Perform preprocessing step: crop, convert to grayscale, resize.
  <img src="img/leo_pp.png" width="6%">
 </p>
 
-**step 3**: search of best Graph Of Faces.
+**step 2**: search of best Graph Of Faces.
   
   - repeat a certain amount of times:
   
@@ -90,13 +90,13 @@ Perform preprocessing step: crop, convert to grayscale, resize.
         - compute the % of **false positive** 
    - Take **best model** with lowest false positive rate
 
-**step 5**: Perform Boosting step by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
+**step 3**: Perform Boosting step by randomly choosing (10-50) faces from dataset which are barely classified as False by Graph Of Faces model. These nodes should be referred as boosting nodes or support nodes.
 
 <p align="center">
   <img src="img/graph_1.png" width="50%">
 </p>
 
-**step 6**: Perform inference using boosting on frame.
+**step 4**: Perform inference using boosting on frame.
 
 For each frame perform "all in one" inference for both current frame and for faces chosen at previous steps.
 
