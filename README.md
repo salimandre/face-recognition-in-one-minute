@@ -85,12 +85,14 @@ For each frame perform "all in one" inference for both current frame and for fac
 We used the following **settings**: 
 
 step 1: we took 7 snapshots
+
 step 2: we sampled graph of faces/PcaNet 10 times to find 5 imgs of stars + best PcaNet. Model was evaluated on 100 random imgs from **LFW-funneled dataset**.
+
 step 3: we added 40 support nodes among 500 random imgs. 
 
 **Running time**: Snapshots took 12s (1 every 2s) + 1:09 of computations
 
-**Evaluation** We tried many runs and we evaluated the false positive rate on 1000 random imgs from LFW-funneled and we obtained **99.9%**. If diverse poses are taken during snapshots then recognition is robust to face movements as long as Viola-Jones detect a face. 
+**Evaluation** We tried many runs and we evaluated the false positive rate on 1000 random imgs from LFW-funneled and we obtained **0.01%**. If diverse poses are taken during snapshots then recognition is robust to face movements as long as Viola-Jones detect a face. Although we lacked of evaluation on real condition with real people taking diverse poses.
 
 <p align="center">
   <img src="img/result_one_minute.gif" width="24%">
