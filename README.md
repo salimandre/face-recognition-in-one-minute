@@ -22,37 +22,13 @@ To produce inference over new face imgs we need to compute one row of **similari
   * pre-trained Viola-Jones algorithm
   * a dataset of 1000 imgs from different people
 
-**step 1**: choose 10 imgs from stars/personalities which are in some way (gender, age, skin color etc...) similar to you. We downloaded ours from google images. Note: this step could be spared, as explained in Results.
 
-These imgs will be added to Graph Of Faces and labelled as false.
-
-<p align="center">
-  <img src="img/my_stars.png" width="24%">
-</p>
-
-**step 1**: take few snapshots (5-10) in real-time of you, varying your pose and your distance to webcam 
+**step 1**: take few snapshots in real-time of you, varying your pose and your distance to webcam 
 
 These imgs will be added to Graph Of Faces and labelled as true.
 
 <p align="center">
   <img src="img/real_time_label.gif" width="24%">
-</p>
-
-<p align="center">
-  <img src="img/graph_0_bis.png" width="50%">
-</p>
-
-**step 2**: compute bounding boxes using Viola-Jones algorithms to detect faces on every imgs.
-
-Perform preprocessing step: crop, convert to grayscale, resize.
-
-<p align="center">
- <img src="img/my_face.png" width="24%">
- <img src="img/my_face_pp.png" width="6%">
- <img src="img/my_stars_jesse.png" width="14%">
- <img src="img/jesse_pp.png" width="6%">
- <img src="img/my_stars_leo.png" width="14%">
- <img src="img/leo_pp.png" width="6%">
 </p>
 
 **step 2**: search of best Graph Of Faces.
