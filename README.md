@@ -6,7 +6,7 @@ We were inspired for this work by the following reference:
 
 ## Installation
 
-Don't clone repo since there are lot of imgs... Just download required files from the following list:
+Don't clone repo since there are lot of imgs... Just download **5 required files** from the following list:
 
 **Download**:
 
