@@ -6,7 +6,7 @@ We were inspired for this work by the following reference:
 
 ## Installation
 
-Don't clone repo since there are lot of imgs... Just download **5 required files** from the following list + 1 data set of images with faces:
+NB: repo contains lot of imgs... **5 required files** are in the following list + 1 data set of images with faces:
 
 **Download**:
 
